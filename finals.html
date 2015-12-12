@@ -47,36 +47,34 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
-								<form method="post">
-									<div>
-										<div class="finalEntry">
-											<input type="text" name="currentGrade" id="currentGrade" value="" placeholder="Current Grade" />
-										</div>
-										<div class="finalEntry">
-											<input type="text" name="desiredGrade" id="desiredGrade" value="" placeholder="Desired Grade" />
-										</div>
-										<div class="finalEntry">
-											<input type="text" name="finalWorth" id="finalWorth" value="" placeholder="Final Weight" />
-										</div>
+								<div>
+									<div class="finalEntry">
+										<input type="text" name="currentGrade" id="currentGrade" value="" placeholder="Current Grade" />
 									</div>
-									<div>
-										<input type="submit" value="Calculate Grade" class="special" onclick="calculateFinal()" />
+									<div class="finalEntry">
+										<input type="text" name="desiredGrade" id="desiredGrade" value="" placeholder="Desired Grade" />
 									</div>
-									<script>
-										function calculateFinal()
-										{
-											var current = parseFloat(document.getElementById("currentGrade").value);
-											var target = parseFloat(document.getElementById("desiredGrade").value);
-											var worth = parseFloat(document.getElementById("finalWorth").value);
-											
-											var num = (100*target-(100-worth)*current)/worth;
-											var scoreNeeded = Math.round(num*100)/100;
-											
-											alert("You need to score a " + scoreNeeded + " on the final to get a " 
-											+ target + " overall.");
-										}
-									</script>
-								</form>
+									<div class="finalEntry">
+										<input type="text" name="finalWorth" id="finalWorth" value="" placeholder="Final Weight" />
+									</div>
+								</div>
+								<div>
+									<input type="submit" value="Calculate Grade" class="special" onclick="calculateFinal()" />
+								</div>
+								<script>
+									function calculateFinal()
+									{
+										var current = parseFloat(document.getElementById("currentGrade").value);
+										var target = parseFloat(document.getElementById("desiredGrade").value);
+										var worth = parseFloat(document.getElementById("finalWorth").value);
+										
+										var num = (100*target-(100-worth)*current)/worth;
+										var scoreNeeded = Math.round(num*100)/100;
+										
+										alert("You need to score a " + scoreNeeded + " on the final to get a " 
+										+ target + " overall.");
+									}
+								</script>
 							</div>
 						</section>
 					</article>
