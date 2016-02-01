@@ -3,6 +3,19 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+function calculateFinal()
+{
+	var current = parseFloat(document.getElementById("currentGrade").value);
+	var target = parseFloat(document.getElementById("desiredGrade").value);
+	var worth = parseFloat(document.getElementById("finalWorth").value);
+	
+	var num = (100*target-(100-worth)*current)/worth;
+	var scoreNeeded = Math.round(num*100)/100;
+	
+	alert("You need to score a " + scoreNeeded + " on the final to get a " 
+	+ target + " overall.");
+}
+
 
 (function($) {
 
