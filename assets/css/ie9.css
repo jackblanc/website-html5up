@@ -1,125 +1,94 @@
 /*
-	Spectral by HTML5 UP
-	html5up.net | @n33co
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Spotlight */
+/* Spotlights */
 
-	.spotlight {
+	.spotlights > section:after {
+		content: '';
 		display: block;
+		clear: both;
 	}
 
-		.spotlight .image {
-			display: inline-block;
-			vertical-align: top;
-		}
+	.spotlights > section > .image {
+		float: left;
+	}
 
-		.spotlight .content {
-			padding: 4em 4em 2em 4em ;
-			display: inline-block;
-		}
+	.spotlights > section > .content {
+		float: left;
+	}
 
-		.spotlight:after {
-			clear: both;
-			content: '';
-			display: block;
-		}
+/* Tiles */
 
-/* Features */
-
-	.features {
+	.tiles:after {
+		content: '';
 		display: block;
+		clear: both;
 	}
 
-		.features li {
-			float: left;
-		}
-
-		.features:after {
-			content: '';
-			display: block;
-			clear: both;
-		}
-
-/* Banner + Wrapper (style4) */
-
-	#banner,
-	.wrapper.style4 {
-		background-image: url("../../images/banner.jpg");
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
+	.tiles article {
+		padding: 8em 4em 6em 4em ;
+		float: left;
+		height: auto;
+		max-height: none;
+		min-height: 0;
 	}
 
-		#banner:before,
-		.wrapper.style4:before {
-			background: #000000;
-			content: '';
-			height: 100%;
-			left: 0;
-			opacity: 0.5;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
+/* Header */
 
-		#banner .inner,
-		.wrapper.style4 .inner {
-			position: relative;
-			z-index: 1;
-		}
+	#header .logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	#header nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 
 /* Banner */
 
 	#banner {
-		padding: 14em 0 12em 0 ;
+		padding: 7em 0 4em 0 ;
+		background-attachment: scroll;
 		height: auto;
+		max-height: none;
+		min-height: 0;
 	}
 
-		#banner:after {
-			display: none;
+		#banner > .inner .content {
+			display: block;
 		}
 
-/* CTA */
+			#banner > .inner .content > * {
+				margin-left: 0;
+				margin: 0 0 2em 0;
+			}
 
-	#cta .inner header {
-		float: left;
-	}
+		#banner.major {
+			height: auto;
+			max-height: none;
+			min-height: 0;
+		}
 
-	#cta .inner .actions {
-		float: left;
-	}
+/* Contact */
 
-	#cta .inner:after {
-		clear: both;
+	#contact:after {
 		content: '';
 		display: block;
+		clear: both;
 	}
 
-/* Main */
-
-	#main > header {
-		background-image: url("../../images/banner.jpg");
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
+	#contact > .inner > * {
+		float: left;
 	}
 
-		#main > header:before {
-			background: #000000;
-			content: '';
-			height: 100%;
-			left: 0;
-			opacity: 0.5;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
+/* Menu */
 
-		#main > header > * {
-			position: relative;
-			z-index: 1;
-		}
+	#menu .inner {
+		margin: 0 auto;
+	}

@@ -4,112 +4,47 @@
 @import 'libs/skel';
 
 /*
-	Spectral by HTML5 UP
-	html5up.net | @n33co
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Icon */
-
-	.icon {
-		&.major {
-			border: none;
-
-			&:before {
-				font-size: 3em;
-			}
-		}
-	}
-
-/* Form */
-
-	label {
-		color: _palette(accent7, fg-bold);
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		border: solid 1px _palette(accent7, border);
-	}
-
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
 	.button {
-		border: solid 2px _palette(accent7, border);
+		border: solid 2px !important;
 
-		&.special {
-			border: 0 !important;
-		}
-	}
+		&.next {
+			padding-right: 1.75em;
 
-/* Page Wrapper + Menu */
-
-	#menu {
-		display: none;
-	}
-
-	body.is-menu-visible {
-		#menu {
-			display: block;
-		}
-	}
-
-/* Header */
-
-	#header {
-		nav {
-			> ul {
-				> li {
-					> a {
-						&.menuToggle {
-							&:after {
-								display: none;
-							}
-						}
-					}
-				}
+			&:before, &:after {
+				display: none;
 			}
 		}
 	}
 
-/* Banner + Wrapper (style4) */
+/* Tiles */
 
-	#banner,
-	.wrapper.style4 {
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-
-		&:before {
-			display: none;
+	.tiles {
+		article {
+			width: 50%;
+			-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+			background-size: cover;
 		}
 	}
 
 /* Banner */
 
 	#banner {
-		.more {
-			height: 4em;
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
 
-			&:after {
-				display: none;
-			}
+		&:after {
+			display: none;
 		}
 	}
 
-/* Main */
+/* Menu */
 
-	#main {
-		> header {
-			-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-
-			&:before {
-				display: none;
-			}
-		}
+	#menu {
+		background: _palette(bg);
 	}
